@@ -3,8 +3,6 @@
     <wb-module deploy-name="happyants-portal">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
         <property name="context-root" value="happyants-portal"/>
         <property name="java-output-path" value="/happyants-portal/build/classes"/>
     </wb-module>
