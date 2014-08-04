@@ -4,20 +4,21 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.GenericGenerator;
+
 
 /**
  * The persistent class for the H_USER database table.
  * 
  */
 @Entity
-@Table(name="H_USER")
-@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
+@Table(name="P_USER")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SeqGenerator")
-	@SequenceGenerator(name="SeqGenerator",sequenceName="SEQ_H_USER",allocationSize=1,initialValue=1)
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name="system-uuid",strategy = "uuid")
 	private int id;
 
 	private String name;
