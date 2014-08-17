@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value="company")
 public class CompanyController {
 
-	@RequestMapping(value = "intro")
+	@RequestMapping(value = "about")
 	public String intro(){
-		return "company/intro";
+		return "company/aboutUs";
 	}
 	
-	@RequestMapping(value = "resources")
+	@RequestMapping(value = "contact")
 	public String resources(){
-		return "company/resources";
+		return "company/contactUs";
 	}
 	
 }
