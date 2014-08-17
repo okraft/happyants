@@ -22,7 +22,7 @@
 	<!-- 容器默认的DefaultServletHandler处理 所有静态内容与无RequestMapping处理的URL -->
 	<mvc:default-servlet-handler />
 	
-	<mvc:view-controller path="/" view-name="index"/>
+	<mvc:view-controller path="/" view-name="/"/>
 	
 	<!-- 添加注解驱动 -->  
     <mvc:annotation-driven /> 
@@ -32,6 +32,5 @@
 	    <property name="prefix" value="/WEB-INF/jsp/" />  
 	    <property name="suffix" value=".jsp" />  
 	</bean>  
-     	
 			
 </beans>
